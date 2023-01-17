@@ -6,6 +6,7 @@
 ## =========================================================
 
 toupdate=(aws/aws-sdk-php)
+toupdate+=(composer/ca-bundle)
 toupdate+=(doctrine/instantiator)
 toupdate+=(doctrine/persistence)
 toupdate+=(egulias/email-validator)
@@ -34,7 +35,7 @@ for row in $(jq -r '.[] | @base64' data/shops.json); do
 
   for i in "${toupdate[@]}"
   do
-    if echo "$dryrun" | grep -q "$i"
+    if echo "$dryrun" | grep -q "Upgrading $i"
     then
         echo
         echo ">>>>> FOUND $i to update"
