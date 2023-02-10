@@ -1,0 +1,20 @@
+[
+  "aws/aws-crt-php",
+  "aws/aws-sdk-php",
+  "composer/ca-bundle",
+  "doctrine/instantiator",
+  "doctrine/persistence",
+  "egulias/email-validator",
+  "ezimuel/ringphp",
+  "firebase/php-jwt",
+  "google/auth",
+  "google/cloud-core",
+  "laminas/laminas-code",
+  "monolog/monolog",
+  "phpseclib/phpseclib",
+  "phpunit/phpunit",
+  "ramsey/collection",
+  "scssphp/scssphp",
+  "sensio/framework-extra-bundle",
+  "zircote/swagger-php"
+]

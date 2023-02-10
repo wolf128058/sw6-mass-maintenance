@@ -5,23 +5,6 @@
 ## author:      jonas@sfxonline.de
 ## =========================================================
 
-toupdate=(aws/aws-sdk-php)
-toupdate+=(composer/ca-bundle)
-toupdate+=(doctrine/instantiator)
-toupdate+=(doctrine/persistence)
-toupdate+=(egulias/email-validator)
-toupdate+=(ezimuel/ringphp)
-toupdate+=(firebase/php-jwt)
-toupdate+=(google/auth)
-toupdate+=(google/cloud-core)
-toupdate+=(laminas/laminas-code)
-toupdate+=(phpseclib/phpseclib)
-toupdate+=(phpunit/phpunit)
-toupdate+=(ramsey/collection)
-toupdate+=(scssphp/scssphp)
-toupdate+=(sensio/framework-extra-bundle)
-toupdate+=(zircote/swagger-php)
-
 for row in $(jq -r '.[] | @base64' data/shops.json); do
     _jq() {
      echo "${row}" | base64 --decode | jq -r "${1}"
@@ -33,13 +16,13 @@ for row in $(jq -r '.[] | @base64' data/shops.json); do
   dryrun=$(ssh "$(_jq '.host')" "cd  $(_jq '.webroot') && $(_jq '.composer') update --dry-run" 2>&1)
   echo "$dryrun"
 
-  for i in "${toupdate[@]}"
-  do
-    if echo "$dryrun" | grep -q "Upgrading $i"
+  for dep in $(jq -r '.[] | @base64' data/known-deps.json); do
+    mydep=$(echo "${dep}" | base64 --decode)
+    if echo "$dryrun" | grep -q "Upgrading $mydep"
     then
         echo
-        echo ">>>>> FOUND $i to update"
-        ssh "$(_jq '.host')" "cd  $(_jq '.webroot') && $(_jq '.composer') update $i"
+        echo ">>>>> FOUND $mydep to update"
+        ssh "$(_jq '.host')" "cd  $(_jq '.webroot') && $(_jq '.composer') update $mydep"
     fi
   done
 done
