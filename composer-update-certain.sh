@@ -25,11 +25,13 @@ for row in $(jq -r '.[] | @base64' data/shops.json ); do
   if [[ $toupdate == *"*"* ]]; then
     matches=$(echo "$dryrun" | grep -c "$toupdate")
     echo ">>>>> FOUND WILDCARD ""$toupdate"" to update (""$matches"" MATCHES)"
+
     if [ "$matches" -gt 1 ]; then
-    echo '==> doing the real update:'
-    echo
-    ssh "$(_jq '.host')" "cd  $(_jq '.webroot') && $(_jq '.composer') update $toupdate"
+      echo '==> doing the real update:'
+      echo
+      ssh "$(_jq '.host')" "cd  $(_jq '.webroot') && $(_jq '.composer') update $toupdate"
     fi
+
   elif echo "$dryrun" | grep -q "$toupdate"; then
       echo
       echo ">>>>> FOUND ""$toupdate"" to update (EXACT MATCH)"
