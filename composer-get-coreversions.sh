@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## filename     composer-get-coreversions.sh
-## description: run "shopware core-version from composer.lock" on each shop
+## description: get shopwares core-version from composer.lock on each shop
 ## author:      jonas@sfxonline.de
 ## =======================================================================
 
