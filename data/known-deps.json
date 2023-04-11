@@ -13,6 +13,7 @@
   "monolog/monolog",
   "phpseclib/phpseclib",
   "phpunit/phpunit",
+  "psr/http-client",
   "ramsey/collection",
   "scssphp/scssphp",
   "sensio/framework-extra-bundle",
