@@ -9,6 +9,7 @@
   "firebase/php-jwt",
   "google/auth",
   "google/cloud-core",
+  "jawira/plantuml-encoding",
   "laminas/laminas-code",
   "monolog/monolog",
   "phpseclib/phpseclib",
