@@ -12,6 +12,7 @@
   "jawira/plantuml-encoding",
   "laminas/laminas-code",
   "monolog/monolog",
+  "php-http/message-factory",
   "phpseclib/phpseclib",
   "phpunit/phpunit",
   "psr/http-client",
