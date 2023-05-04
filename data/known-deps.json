@@ -17,6 +17,7 @@
   "phpunit/phpunit",
   "psr/http-client",
   "ramsey/collection",
+  "react/promise",
   "scssphp/scssphp",
   "sensio/framework-extra-bundle",
   "symfony/amqp-messenger",
