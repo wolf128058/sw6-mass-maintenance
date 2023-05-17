@@ -7,6 +7,7 @@
   "egulias/email-validator",
   "ezimuel/ringphp",
   "firebase/php-jwt",
+  "friendsofphp/proxy-manager-lts",
   "google/auth",
   "google/cloud-core",
   "jawira/plantuml-encoding",
