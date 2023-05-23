@@ -10,6 +10,7 @@
   "friendsofphp/proxy-manager-lts",
   "google/auth",
   "google/cloud-core",
+  "guzzlehttp/promises",
   "jawira/plantuml-encoding",
   "laminas/laminas-code",
   "monolog/monolog",
