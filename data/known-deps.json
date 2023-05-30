@@ -2,6 +2,7 @@
   "aws/aws-crt-php",
   "aws/aws-sdk-php",
   "composer/ca-bundle",
+  "doctrine/deprecations",
   "doctrine/instantiator",
   "doctrine/persistence",
   "egulias/email-validator",
