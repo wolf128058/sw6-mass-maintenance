@@ -2,6 +2,7 @@
   "aws/aws-crt-php",
   "aws/aws-sdk-php",
   "composer/ca-bundle",
+  "composer/semver",
   "doctrine/collections",
   "doctrine/deprecations",
   "doctrine/instantiator",
