@@ -1,0 +1,3 @@
+[submodule "data/pluginstatus"]
+	path = data/pluginstatus
+	url = git@code.sfxonline.de:sfxonline/tools/get-sw6-plugin-states.git
