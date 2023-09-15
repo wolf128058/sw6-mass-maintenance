@@ -14,5 +14,7 @@ for row in $(jq -r '.[] | @base64' data/shops.json); do
   echo '-----------------'
   _jq '.name'
   echo '-----------------'
-  ssh "$(_jq '.host')" "$(_jq '.console') plugin:list"
+  echo
+  ssh "$(_jq '.host')" "$(_jq '.console') plugin:refresh" > /dev/null
+  ssh "$(_jq '.host')" "$(_jq '.console') plugin:list --json" | jq > data/$(_jq '.shortname').json
 done
