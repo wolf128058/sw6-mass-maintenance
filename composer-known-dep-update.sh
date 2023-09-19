@@ -13,6 +13,14 @@ for row in $(jq -r '.[] | @base64' data/shops.json); do
   echo '-----------------'
   _jq '.name'
   echo '-----------------'
+
+  updatedeps="$(_jq '.updatedeps')"
+  if [ "$updatedeps" == "false" ]
+  then
+    echo "Update dependencies is set to $updatedeps so we skip this one."
+    continue
+  fi
+
   dryrun=$(ssh "$(_jq '.host')" "cd  $(_jq '.webroot') && $(_jq '.composer') update --dry-run" 2>&1)
   echo "$dryrun"
 
