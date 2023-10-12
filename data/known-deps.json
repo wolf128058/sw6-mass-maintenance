@@ -38,6 +38,7 @@
   "sebastian/diff",
   "sebastian/global-state",
   "sensio/framework-extra-bundle",
+  "shopware/conflicts",
   "symfony/amqp-messenger",
   "symfony/asset",
   "symfony/browser-kit",
