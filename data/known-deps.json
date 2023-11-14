@@ -29,6 +29,7 @@
   "league/mime-type-detection",
   "monolog/monolog",
   "mtdowling/jmespath.php",
+  "nyholm/psr7",
   "php-http/message-factory",
   "phpseclib/phpseclib",
   "phpunit/phpunit",
