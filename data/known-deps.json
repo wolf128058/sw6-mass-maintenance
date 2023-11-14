@@ -21,6 +21,7 @@
   "friendsofphp/proxy-manager-lts",
   "google/auth",
   "google/cloud-core",
+  "google/cloud-storage",
   "guzzlehttp/promises",
   "jawira/plantuml-encoding",
   "justinrainbow/json-schema",
