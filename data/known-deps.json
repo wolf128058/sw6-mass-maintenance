@@ -4,6 +4,7 @@
   "composer/ca-bundle",
   "composer/composer",
   "composer/semver",
+  "composer/spdx-licenses",
   "doctrine/collections",
   "doctrine/deprecations",
   "doctrine/instantiator",
@@ -100,5 +101,6 @@
   "symfony/var-exporter",
   "symfony/web-profiler-bundle",
   "symfony/yaml",
+  "theseer/tokenizer",
   "zircote/swagger-php"
 ]
