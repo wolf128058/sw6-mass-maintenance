@@ -42,6 +42,7 @@
   "nikic/php-parser",
   "nyholm/psr7",
   "phenx/php-svg-li",
+  "phenx/php-svg-lib",
   "php-http/message-factory",
   "phpseclib/phpseclib",
   "phpunit/php-code-coverage",
