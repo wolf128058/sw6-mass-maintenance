@@ -53,6 +53,7 @@
   "scssphp/scssphp",
   "sebastian/diff",
   "sebastian/global-state",
+  "seld/jsonlint",
   "sensio/framework-extra-bundle",
   "setasign/fpdi",
   "shopware/conflicts",
