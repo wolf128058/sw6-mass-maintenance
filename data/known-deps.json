@@ -1,4 +1,5 @@
 [
+  "async-aws/core",
   "aws/aws-crt-php",
   "aws/aws-sdk-php",
   "composer/ca-bundle",
