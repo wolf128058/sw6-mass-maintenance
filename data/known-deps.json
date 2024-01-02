@@ -38,6 +38,7 @@
   "league/mime-type-detection",
   "league/uri-interfaces",
   "league/uri",
+  "mbezhanov/faker-provider-collection",
   "monolog/monolog",
   "mtdowling/jmespath.php",
   "nikic/php-parser",
