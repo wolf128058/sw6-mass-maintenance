@@ -43,6 +43,7 @@
   "mtdowling/jmespath.php",
   "nikic/php-parser",
   "nyholm/psr7",
+  "phenx/php-font-lib",
   "phenx/php-svg-li",
   "phenx/php-svg-lib",
   "php-http/message-factory",
