@@ -53,6 +53,7 @@
   "psr/http-client",
   "ramsey/collection",
   "react/promise",
+  "sabberworm/php-css-parser",
   "scssphp/scssphp",
   "sebastian/diff",
   "sebastian/global-state",
