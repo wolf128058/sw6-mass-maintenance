@@ -1,4 +1,6 @@
 # sw6-mass-maintenance
+[![CodeFactor](https://www.codefactor.io/repository/github/jonas-sfx/sw6-mass-maintenance/badge)](https://www.codefactor.io/repository/github/jonas-sfx/sw6-mass-maintenance)
+
 Just a few scripts to maintain/update multiple shopware setups.
 
 You will need composer and the shopware-console.
